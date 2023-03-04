@@ -20,7 +20,7 @@ jQuery - A JavaScript library for DOM manipulation and AJAX. Quotes API - An API
 If you find any issues or have suggestions for improvement, please feel free to submit a pull request or open an issue on the GitHub repository.
 
 ## Credits
-The quote generator was created by _**zaigum-Hasan-Jafri**_ and is based on a tutorial by **freeCodeCamp.org** .
+The quote generator was created by _**zaigum-Hasan-Jafri**_ .
 
 #### CustomQuoteAPI 
 "Use custom [Quote API](https://type.fit/api/quotes) to fetch thousands of quotes for random selection".
