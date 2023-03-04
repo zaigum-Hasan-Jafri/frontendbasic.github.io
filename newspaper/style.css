@@ -1,0 +1,254 @@
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+
+}
+
+.container {
+    width: 100vw;
+    min-height: fit-content;
+}
+
+#nav {
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    background-color: #52796f;
+    z-index: 10;
+    margin-bottom: 0.25rem;
+}
+
+.logo {
+    flex: 1 1 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    text-align: start;
+    color: #84c1b2;
+    -webkit-text-stroke: 0.5px white;
+}
+
+.nav-link {
+    flex: 1 1 25rem;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-li {
+    padding: 0 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.toggle-btn {
+    font-size: 2rem;
+    margin-top:1rem;
+    display: none;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 7rem;
+    min-width: fit-content;
+}
+.toggle-btn.active{
+    margin-top: 0;
+}
+
+.toggle-btn>.open::before {
+    content: "+";
+    cursor: pointer;
+    padding: 0 0.5rem;
+    text-align: center;
+    border: 1px #000000 solid;
+    border-radius: 50%;
+    min-width: fit-content;
+    background-color:#9ecda7;
+}
+
+.toggle-btn.active>.open::before {
+    content: "x";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    width: 10rem;
+    background-color: #52796f;
+}
+
+.toggle-btn.active>div {
+    display: flex;
+    height: 100vh;
+    width: 10rem;
+    flex-flow: column;
+    background-color: #52796f;
+
+}
+
+.toggle-btn>div {
+    display: none;
+    width: 0rem;
+    min-width: fit-content;
+    transform: width 1s ease;
+}
+
+/* Section 01 */
+.section-01 {
+    font-size: 1rem;
+    color: #cad2c5;
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.s1-left {
+    grid-column: span 2;
+    display: flex;
+    gap: 0.25rem;
+    flex-flow: column;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.img-holder {
+    flex: 2;
+    width: 100%;
+}
+
+.s1-left-divison {
+    flex: 1;
+}
+
+.s1-left-d-left {
+    display: flex;
+    padding-bottom: 1rem;
+    background-color: #354f52;
+}
+
+.s1-left-d-left .item-container {
+    margin-left: 0.2rem;
+    flex: 1;
+}
+
+.s1-left-d-left .content-box {
+    flex: 2;
+}
+
+.s1-left-d-left .content-box button {
+    color: rgb(37, 111, 177);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    outline: .25rem white solid;
+    cursor: pointer;
+}
+
+
+.s1-right {
+    min-height: fit-content;
+    display: flex;
+    background-color: #354f52;
+}
+
+.s1-right-container {
+    height: fit-content;
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.s1-right-container .title {
+    margin-top: 1rem;
+    text-align: center;
+    color: #9ecda7;
+    font-size: 2rem;
+}
+
+.content {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.content .line {
+    width: inherit;
+    height: .1rem;
+    background-color: #cad2c5;
+}
+
+.content-item:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.content-item .heading {
+    color: #9ecda7;
+    font-weight: bold;
+}
+
+.section-02 {
+    margin: 1rem 0 2rem 0;
+    width: inherit;
+}
+
+.s2-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.s2-grid-item {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+}
+
+.s2-grid-item .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.s2-grid-item img {
+    width: 5rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1023px) {
+    .s2-grid {
+        margin: 0 0.25rem;
+        grid-template-columns: repeat(1, minmax(0, 100vw));
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .nav-link {
+        display: none;
+    }
+    .toggle-btn{
+        display: flex;
+    }
+
+    .s1-right {
+        grid-column: span 2;
+    }
+
+    .s2-grid {
+        margin: 0 0.25rem;
+        grid-template-columns: repeat(1, minmax(0, 100vw));
+    }
+
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>NewPaper-Style Page</title>
+    <link rel="shortcut icon" href="https://tinyurl.com/faviicon-img" type="image/x-icon">
+</head>
+
+<body
+    style="margin: 0;padding: 0;box-sizing: border-box;top: 0;margin-left: auto; margin-right: auto; font-family:'Times New Roman', Times, serif; position:relative;">
+    <header class="container">
+        <nav id="nav">
+            <div class="logo left">
+                Logo
+            </div>
+            <div class="nav-link right">
+                <ul class="nav-ul">
+                    <li class="nav-li">Home</li>
+                    <li class="nav-li">News</li>
+                    <li class="nav-li">Populars</li>
+                    <li class="nav-li">Trending</li>
+                    <li class="nav-li">Categories</li>
+                </ul>
+            </div>
+            <div class="toggle-btn">
+                <span class="open"></span>
+                <div class="nav-ul sidebar">
+                    <span class="nav-li">Home</span>
+                    <span class="nav-li">News</span>
+                    <span class="nav-li">Populars</span>
+                    <span class="nav-li">Trending</span>
+                    <span class="nav-li">Categories</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ! section-01 -->
+    <section class="section-01">
+        <div class="s1-left">
+            <div class="img-holder">
+                <img src="https://images.unsplash.com/photo-1667238158829-880e8c3a89c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="" width="100%" height="100%">
+            </div>
+            <div class="s1-left-divison">
+                <div class="s1-left-d-left">
+                    <div class="item-container">
+                        <h2>World Getting Bigger Every Day ?</h2>
+                    </div>
+                    <div class="content-box">
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+                            enim! Doloribus, incidunt. consectetur adipisicing elit.</p>
+                        <button>Read Me More..</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s1-right">
+            <div class="s1-right-container">
+                <div class="title">
+                    <span>News</span>
+                </div>
+                <div class="content">
+                    <div class="content-item">
+                        <span class="heading">Heading 1</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum totam doloremque maxime.</p>
+                    </div>
+                    <span class="line"></span>
+                    <div class="content-item">
+                        <span class="heading">Heading 2</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum totam doloremque maxime.</p>
+                    </div>
+                    <span class="line"></span>
+                    <div class="content-item">
+                        <span class="heading">Heading 3</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum totam doloremque maxime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ! section-2 -->
+    <section class="section-02">
+        <div class="s2-grid col-1 col-3">
+            <div class="s2-grid-item">
+                <img src="https://images.unsplash.com/photo-1667238158829-880e8c3a89c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <div class="item-container">
+                    <div class="heading">Heading</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae commodi reiciendis nisi!</p>
+                </div>
+            </div>
+            <div class="s2-grid-item">
+                <img src="https://images.unsplash.com/photo-1667238158829-880e8c3a89c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <div class="item-container">
+                    <div class="heading">Heading</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae commodi reiciendis nisi!</p>
+                </div>
+            </div>
+            <div class="s2-grid-item">
+                <img src="https://images.unsplash.com/photo-1667238158829-880e8c3a89c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <div class="item-container">
+                    <div class="heading">Heading</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae commodi reiciendis nisi!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        document.querySelector(".open").addEventListener('click', function () {
+            document.querySelector(".toggle-btn").classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
