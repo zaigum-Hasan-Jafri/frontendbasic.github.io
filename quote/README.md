@@ -1,5 +1,5 @@
 # JavascriptQuoteGenerator 
-[javacriptQuoteGenerator](https://zaigum-hasan-jafri.github.io/)
+[javacriptQuoteGenerator](https://zaigum-hasan-jafri.github.io/frontendbasic.github.io/quote/)
 "This QuoteGenerator can generate thousands of quotes".
 
 This is a simple **JavaScript application** that generates random quotes using an API and displays them on the screen. It is a great tool for learning basic JavaScript programming skills.
