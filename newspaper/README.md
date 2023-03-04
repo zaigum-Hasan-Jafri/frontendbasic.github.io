@@ -19,7 +19,7 @@ To run this landing page locally, you can clone the repository using the followi
 _you can download the ZIP file and extract it to a directory of your choice._
 
 ## Usage
-To view the landing page [Click here](). You can also make changes to the HTML and CSS files to customize the page to your liking.
+To view the landing page [Click here](https://zaigum-hasan-jafri.github.io/frontendbasic.github.io/newspaper/). You can also make changes to the HTML and CSS files to customize the page to your liking.
 
 ## Contributing
 If you would like to contribute to this project, please follow these steps:
